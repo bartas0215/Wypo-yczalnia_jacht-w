@@ -2,8 +2,9 @@ import java.util.Scanner;
 
 class Klient extends Program {
 
-	
-		
+	private int cena1 = 2000; 
+	private int cena2 = cena1+400;
+	private int cena3 = cena1*2;
 	
 	 void szmapan() {
 		 
@@ -19,25 +20,25 @@ class Klient extends Program {
 						  int liczZ=szampan1.nextInt();
 						  if(liczZ==2) {
 							  
-							  System.out.println("Cena wyniesie " + szp1.getSzp() + " za osobê" );
+							  System.out.println("Cena wyniesie " + cena1  +  "za osobê" );
 						  }
 						  
 						  else if(liczZ==3) {
-							  System.out.println("Cena wyniesie 900 z³ za osobê");
-						
+							  System.out.println("Cena wyniesie " + cena1/3   + "za osobê");
+						 
 						 		  
 					}
 					
 						else if(liczZ==4) {
-							  System.out.println("Cena wyniesie 800 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena1/4 + "za osobê");
 						  }
 						else if(liczZ==5) {
-								  System.out.println("Cena wyniesie 700 z³ za osobê");
+								  System.out.println("Cena wyniesie " + cena1/5 + "za osobê");
 						  
 						  
 					}
 						else if(liczZ==6) {
-							  System.out.println("Cena wyniesie 600 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena1/6 +  "za osobê");
 					
 					}
 					}
@@ -45,25 +46,25 @@ class Klient extends Program {
 						System.out.println("Podaj liczbê osób\nMo¿liwe wybory: 2,3,4,5,6 ");
 						  int liczZ=szampan1.nextInt();
 						  if(liczZ==2) {
-							  System.out.println("Cena wyniesie 1000 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena2  +  "za osobê" );
 						  }
 						  
 						  else if(liczZ==3) {
-							  System.out.println("Cena wyniesie 900 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena2/3  +  "za osobê" );
 						
 						 		  
 					}
 					
 						else if(liczZ==4) {
-							  System.out.println("Cena wyniesie 800 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena2/4  +  "za osobê" );
 						  }
 						else if(liczZ==5) {
-								  System.out.println("Cena wyniesie 700 z³ za osobê");
+								  System.out.println("Cena wyniesie " + cena2/5  +  "za osobê" );
 						  
 						  
 					}
 						else if(liczZ==6) {
-							  System.out.println("Cena wyniesie 600 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena2/6  +  "za osobê" );
 					
 					}
 					}
@@ -72,25 +73,25 @@ class Klient extends Program {
 						System.out.println("Podaj liczbê osób\nMo¿liwe wybory: 2,3,4,5,6 ");
 						  int liczZ=szampan1.nextInt();
 						  if(liczZ==2) {
-							  System.out.println("Cena wyniesie 1000 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena3  +  "za osobê" );
 						  }
 						  
 						  else if(liczZ==3) {
-							  System.out.println("Cena wyniesie 900 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena3/3  +  "za osobê" );
 						
 						 		  
 					}
 					
 						else if(liczZ==4) {
-							  System.out.println("Cena wyniesie 800 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena3/4  +  "za osobê" );
 						  }
 						else if(liczZ==5) {
-								  System.out.println("Cena wyniesie 700 z³ za osobê");
+								  System.out.println("Cena wyniesie " + cena3/5  +  "za osobê" );
 						  
 						  
 					}
 						else if(liczZ==6) {
-							  System.out.println("Cena wyniesie 600 z³ za osobê");
+							  System.out.println("Cena wyniesie " + cena3/6  +  "za osobê" );
 					
 					}
 				

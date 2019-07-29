@@ -1,46 +1,8 @@
 
-public class Ceny { 
+public class Ceny extends Program {
 
-	private int szp = 1000;
-	
+	int cena1 = 2000;
+	int cena2 = 2500;
+	int cena3 = 3000;
 
-	public int getSzp() {
-		return szp;
-	}
-
-	public void setSzp(int szp) {
-		this.szp = szp;
-	}
-	
-	
-	
-	
-	
-	
-	private int kok = 1400;
-
-	public int getKok() {
-		return kok;
-	}
-
-	public void setKok(int kok) {
-		this.kok = kok;
-	}
-	
-	
-	
-	
-	
-	
-	private int med = 1800;
-
-	public int getMed() {
-		return med;
-	}
-
-	public void setMed(int med) {
-		this.med = med;
-	} 
-	
-	
 }

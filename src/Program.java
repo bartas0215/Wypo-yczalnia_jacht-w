@@ -11,7 +11,8 @@ public class Program {
 		String nazwa = wlas.nextLine(); 
 			switch (nazwa) {
 			
-			case "U¿ytkownik" :  			
+			case "U¿ytkownik" : case  "u¿ytkownik" :
+			
 				System.out.println("Podaj login");
 				String login = wlas.nextLine();
                    			
@@ -24,15 +25,15 @@ public class Program {
 				
 				
 				     case "jacht95" :	
-				          System.out.println("Witamy Bartosz Nowak\nOpcje do wyboru: Stan ³odzi, Stan konta");	
+				          System.out.println("Witamy Bartosz Nowak\nOpcje do wyboru: Stan ³odzi, Stan konta, Zmiana ustawieñ konta");	
 				          String ter = wlas.nextLine();
 				          	switch(ter) {
-				          		case "Stan ³odzi" :
+				          		case "Stan ³odzi" : case "stan ³odzi" :
 				          			Terminarz kra1= new Terminarz();
 				          			kra1.mi();
 				          			break;		     
 				    
-				          		case  "Stan konta" :
+				          		case  "Stan konta" : case "stan konta" :
 				          			   Stan_konta konto = new Stan_konta();
 				          			   System.out.println("Aktualny stan konta"+" " + konto.getBalance() );
 				          	         
@@ -55,18 +56,18 @@ public class Program {
 					
 				}
 			break;
-			case "Klient" :
+			case "Klient" : case "klient" :
 				System.out.println("Proszê wybraæ klasê ³odzi: Szampan, Kokos, Medyk");
 				String jacht1 = wlas.nextLine();
 				switch(jacht1) {
 				//do pracy
-				case "Szampan" :
+				case "Szampan" : case "szampan" :
 					Klient ole = new Klient();
 					ole.szmapan();
 					Array ole1 = new Array();
 					ole1.mi();
 					break;
-				case "Kokos" :
+				case "Kokos" : case "kokos" :
 					
 					Kokos flo = new Kokos();
 					flo.kokos();
@@ -74,7 +75,7 @@ public class Program {
 					flo1.mi();
 					break;
 					
-				case "Medyk" :
+				case "Medyk" : case "medyk" :
 					Medyk bla = new Medyk();
 					bla.medyk();
 					Array bla1= new Array();

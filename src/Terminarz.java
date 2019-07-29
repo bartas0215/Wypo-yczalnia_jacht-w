@@ -44,7 +44,7 @@ for(int i = 0; i < il_wyj; i++)
     players.add(plr);
       switch (name) {
       
-      case "Szampan" :
+      case "Szampan || Medyk "  :
     	   System.out.println("Pozosta³y dwie ³odzie");
     	   
       
