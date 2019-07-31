@@ -57,32 +57,46 @@ public class Program {
 				}
 			break;
 			case "Klient" : case "klient" :
-				System.out.println("Proszê wybraæ klasê ³odzi: Szampan, Kokos, Medyk");
+				System.out.println("Proszê wybraæ klasê ³odzi: Szampan, Kokos, Medyk, Lipiec");
 				String jacht1 = wlas.nextLine();
-				switch(jacht1) {
-				//do pracy
-				case "Szampan" : case "szampan" :
-					Klient ole = new Klient();
-					ole.szmapan();
-					Array ole1 = new Array();
-					ole1.mi();
-					break;
-				case "Kokos" : case "kokos" :
-					
-					Kokos flo = new Kokos();
-					flo.kokos();
-					Array flo1= new Array();
-					flo1.mi();
-					break;
-					
-				case "Medyk" : case "medyk" :
-					Medyk bla = new Medyk();
-					bla.medyk();
-					Array bla1= new Array();
-					bla1.mi();
-		            break;		
 				
+				
+				
+				switch(jacht1) {
+				
+				case "Szampan" : case "szampan" :
+				Klient ole = new Klient();
+				ole.yacht();
+				Array ole1 = new Array();
+				ole1.mi();
+				break;
+			case "Kokos" : case "kokos" :
+				
+				Kokos flo = new Kokos();
+				flo.yacht();
+				Array flo1= new Array();
+				flo1.mi();
+				break;
+				
+			case "Medyk" : case "medyk" :
+				Medyk bla = new Medyk();
+				bla.yacht();
+				Array bla1= new Array();
+				bla1.mi();
+	            break;		
+			
 		            
+				case "Lipiec" : case "lipiec" : 
+					Lipiec lipiec = new Lipiec();
+					lipiec.yacht();
+					Array lipiec1= new Array();
+					lipiec1.mi();
+		            break;		    
+		           
+				
+				
+				
+				
 				}
 				
 			break;

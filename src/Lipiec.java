@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Klient extends Program  {
+public class Lipiec extends Program  {
      // Cena za jeden dzieñ//
      	
-	public static final int PI1=600;
-	public static final int MI1=800;
+	public static final int PI=400;
+	public static final int MI=600;
 	
 	void yacht() {
 	System.out.println("Preferowana d³ugoœæ kad³uba: 8 metrów lub 10 metrów (Proszê podaæ wy³¹czenie liczê)" );
@@ -13,7 +13,7 @@ public class Klient extends Program  {
 			if(dlKad==8) {
 	               System.out.println("Wybierz iloœæ dni");
 	               int ilDni =szampan1.nextInt();
-	               int cena = ilDni*PI1;
+	               int cena = ilDni*PI;
 	               System.out.println("Wybierz liczbe osób - Maksymalnie na ³odzi mo¿e znajdowaæ siê 6 osób" );
 	               int ilOs = szampan1.nextInt();
 	               int cena1 = cena/ilOs;
@@ -25,7 +25,7 @@ public class Klient extends Program  {
 			    	   
 			    	   System.out.println("Wybierz iloœæ dni");
 		               int ilDni =szampan1.nextInt();
-		               int cena = ilDni*MI1;
+		               int cena = ilDni*MI;
 		               System.out.println("Wybierz liczbe osób - Maksymalnie na ³odzi mo¿e znajdowaæ siê 6 osób" );
 		               int ilOs = szampan1.nextInt();
 		               int cena1 = cena/ilOs;

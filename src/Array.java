@@ -28,7 +28,7 @@ void mi() {
 	ArrayList<Array> players = new ArrayList<Array>();
 	int il_za³;
 
-	System.out.println("Potwierdz liczbê osób (Proszê podaæ numer)");
+	System.out.println("W celu dokoñczenia rezerwacji potwierdz liczbê osób (Proszê podaæ numer)");
 	il_za³ = input.nextInt();
 
 
