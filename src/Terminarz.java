@@ -42,14 +42,8 @@ for(int i = 0; i < il_wyj; i++)
     Array plr = new Array();
     plr.setName(name);
     players.add(plr);
-      switch (name) {
-      
-      case "Szampan || Medyk "  :
-    	   System.out.println("Pozosta³y dwie ³odzie");
-    	   
-      
-      
-      }
+    
+
 }
 }
 }
