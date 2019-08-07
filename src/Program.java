@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
-public class Program {
+public class Program  {
 
 	public static void main(String[] args) {
+		
+		GUI gui = new GUI();
+		gui.si();
 
 		System.out.println("Witamy w systemie rezerwacyjnym Wypo¿yczlni Jachtów MEWA");
 		
@@ -79,15 +82,20 @@ public class Program {
 					Array lipiec1 = new Array();
 					lipiec1.mi();
 					break;
+					
+					
+					default :
+					System.out.println("Urochom program ponownie");
 
 				}
 
 				
 
-			
-				System.out.println("Urochom program ponownie");
+				}
 				
-			}
+				
+				
+			
 
 		
 		System.out.println("Dziêkujemy za skorzytanie z systemu rezerwacyjnego\nWypo¿yczalni jachtów Mewa");
@@ -95,4 +103,8 @@ public class Program {
 	
 
 }
-}
+
+
+		
+	}
+

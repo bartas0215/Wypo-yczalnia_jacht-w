@@ -1,51 +1,57 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Terminarz extends Program {
 
-	
-	
-	
-	
 	private static String name;
 
-    public void setName(String pName)
-    {
-        name = pName;
-    }
+	public void setName(String pName) {
+		name = pName;
+	}
 
-    public String getName()
-    {
+	public String getName() {
 
-        return name;
-    }
+		return name;
+	}
 
+	void mi() {
 
+		Scanner input = new Scanner(System.in);
+		{
+			ArrayList<Array> ilwyj2 = new ArrayList<Array>();
+			ArrayList<String> cars = new ArrayList<String>();
+			cars.add("Szampan");
+			cars.add("Kokos");
+			cars.add("Medyk");
+			cars.add("Lipiec");
 
+			int ilwyj1;
 
+			System.out.println("Podaj liczbê wynajêtych ³odzi");
 
-void mi() {
+			ilwyj1 = input.nextInt();
 
-Scanner input=new Scanner(System.in); {
+			for (int i = 0; i < ilwyj1; i++)
 
-ArrayList<Array> players = new ArrayList<Array>();
-int il_wyj;
+			{
+				System.out.print("Klasa wynajêtej ³odzi" + (i + 1) + "?");
 
-System.out.println("Podaj liczbê wynajêtych ³odzi");
-il_wyj = input.nextInt();
+				String name = input.next();
+				Array plr = new Array();
+				plr.setName(name);
+				ilwyj2.add(plr);
+			}
 
+			if (ilwyj2.equals(cars)) {
+				
+				cars.remove("Szampan");
+			
+			}
+				System.out.println("Pozosta³e klasy" + cars);
+			
 
-for(int i = 0; i < il_wyj; i++)
-{
-    System.out.print("Klasa wynajêtej ³odzi " + (i + 1) + "?");
-    String name = input.next();
-    Array plr = new Array();
-    plr.setName(name);
-    players.add(plr);
-    
+		}
 
+	}
 }
-}
-}
-}
-
