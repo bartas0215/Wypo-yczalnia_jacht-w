@@ -9,7 +9,7 @@ public class GUI extends Program {
 		
 		public void run() {
 			
-			JFrame frame = new JFrame("System rezerwacja jachtów Mewa");
+			JFrame frame = new JFrame("MEWA yacht rental system");
 			frame.setSize(600, 500);
 			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			frame.setVisible(true);

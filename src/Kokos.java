@@ -7,29 +7,29 @@ public class Kokos extends Program  {
 	public static final int MI2=1000;
 	
 	void yacht() {
-	System.out.println("Preferowana d³ugoœæ kad³uba: 8 metrów lub 10 metrów (Proszê podaæ wy³¹czenie liczê)" );
+	System.out.println("What's your prefence in hull lenght ?: 8 meters or 10 meters (Write number only)" );
 	 Scanner szampan1 = new Scanner(System.in); {
 		 int dlKad=szampan1.nextInt();
 			if(dlKad==8) {
-	               System.out.println("Wybierz iloœæ dni");
+	               System.out.println("Choose number of days");
 	               int ilDni =szampan1.nextInt();
 	               int cena = ilDni*PI2;
-	               System.out.println("Wybierz liczbe osób - Maksymalnie na ³odzi mo¿e znajdowaæ siê 6 osób" );
+	               System.out.println("Choose number of people - Remember that our yachts could accomodate up to 6 people" );
 	               int ilOs = szampan1.nextInt();
 	               int cena1 = cena/ilOs;
-	               System.out.println("Cena na osobê wyniesie " + cena1 );
+	               System.out.println("Price for a single pearson " + cena1 );
 	
 }
 			
 			       else if(dlKad==10) {
 			    	   
-			    	   System.out.println("Wybierz iloœæ dni");
+			    	   System.out.println("Choose number of days");
 		               int ilDni =szampan1.nextInt();
 		               int cena = ilDni*MI2;
-		               System.out.println("Wybierz liczbe osób - Maksymalnie na ³odzi mo¿e znajdowaæ siê 6 osób" );
+		               System.out.println("Choose number of people - Remember that our yachts could accomodate up to 6 people" );
 		               int ilOs = szampan1.nextInt();
 		               int cena1 = cena/ilOs;
-		               System.out.println("Cena na osobê wyniesie " + cena1 );
+		               System.out.println("Price for a single pearson " + cena1 );
 			    	   
 			    	   
 			    	   

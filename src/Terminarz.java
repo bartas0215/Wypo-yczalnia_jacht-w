@@ -28,21 +28,21 @@ public class Terminarz extends Program {
 
 			int ilwyj1;
 
-			System.out.println("Podaj liczbê wynajêtych ³odzi");
+			System.out.println("Write the number of rented boats");
 
 			ilwyj1 = input.nextInt();
 
 			for (int i = 0; i < ilwyj1; i++)
 
 			{
-				System.out.print("Klasa wynajêtej ³odzi" + (i + 1) + "?");
+				System.out.print("Rented boat class" + (i + 1) + "?");
 
 				String name = input.next();
 				Array plr = new Array();
 				plr.setName(name);
 				ilwyj2.add(plr);
 			}
-
+             //more work//
 			if (ilwyj2.equals(cars)) {
 				
 				cars.remove("Szampan");
