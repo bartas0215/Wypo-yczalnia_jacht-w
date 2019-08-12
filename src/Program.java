@@ -1,12 +1,27 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Program {
-	
-	
-	void set() {
+
+	public void file() throws FileNotFoundException {
+
+		String fileName = "New.txt";
+		File textfile = new File(fileName);
+		Scanner in = new Scanner(textfile);
+
+		while (in.hasNextLine()) {
+
+			String line = in.nextLine();
+			System.out.println(line);
+
+		}
+
+	}
+
+	public void set() throws FileNotFoundException {
 		Scanner wlas1 = new Scanner(System.in);
-		
-	
+
 		System.out.println("Select the boat class: Szampan, Kokos, Medyk, Lipiec");
 		String jacht1 = wlas1.nextLine();
 		switch (jacht1) {
@@ -17,6 +32,8 @@ public class Program {
 			ole.yacht();
 			Array ole1 = new Array();
 			ole1.mi();
+			Program ole2 = new Program();
+			ole2.file();
 			break;
 		case "Kokos":
 		case "kokos":
@@ -25,6 +42,8 @@ public class Program {
 			flo.yacht();
 			Array flo1 = new Array();
 			flo1.mi();
+			Program flo2 = new Program();
+			flo2.file();
 			break;
 
 		case "Medyk":
@@ -33,6 +52,8 @@ public class Program {
 			bla.yacht();
 			Array bla1 = new Array();
 			bla1.mi();
+			Program bla2 = new Program();
+			bla2.file();
 			break;
 
 		case "Lipiec":
@@ -41,12 +62,16 @@ public class Program {
 			lipiec.yacht();
 			Array lipiec1 = new Array();
 			lipiec1.mi();
+			Program lipiec2 = new Program();
+		    lipiec2.file();
 			break;
 
 		default:
-			System.out.println("Start again"); }}
+			System.out.println("Start again");
+		}
+	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 
 		System.out.println("Welcome in MEWA yachting rental reservation system");
 
@@ -92,31 +117,25 @@ public class Program {
 
 			case "Sign in":
 			case "sign in":
-				Program ro1= new Program();
+				Program ro1 = new Program();
 				ro1.set();
 
 				break;
 
 			case "Sign up":
 			case "sign up":
-				
+
 				NewAcc acc = new NewAcc();
 				acc.la();
 				Program ro = new Program();
 				ro.set();
 
-			    break;
+				break;
 			}
-			
-         
 
 		}
 
 		System.out.println("Thank you for using MEWA yacht rental system");
 
-	
-
-
-	
-}
+	}
 }

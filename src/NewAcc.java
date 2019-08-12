@@ -32,19 +32,20 @@ public class NewAcc extends Program  {
 		pass.put(pass3, 1);
 		pass.put(pass4, 2);
 		//More work//
-		if (pass3==pass4 ) {
-			System.out.println("Following data was added to your account[ e-mail, login]:" + email + "\nProper password implemented:" +pass );
-		    
-			
-		}
 		
-		else if(pass3 != pass4) {
+		
+		
+		if(pass3 != pass4) {
 			System.out.println("Inproper password implemented");
 		
 		}
 	
 	
-	
+		else if (pass3==pass4 ) {
+			System.out.println("Following data was added to your account[ e-mail, login]:" + email + "\nProper password implemented:" +pass );
+		    
+			
+		}
 }
 }
 	
