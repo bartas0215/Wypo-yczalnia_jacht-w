@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Array.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Klient.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Kokos.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Lipiec.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Medyk.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Program.java" charset="windows-1250" />
+    <file url="file://$PROJECT_DIR$/src/Terminarz.java" charset="windows-1250" />
+  </component>
+</project>

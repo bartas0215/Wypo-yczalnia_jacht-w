@@ -20,11 +20,12 @@ public class Terminarz extends Program {
 		Scanner input = new Scanner(System.in);
 		{
 			ArrayList<Array> ilwyj2 = new ArrayList<Array>();
-			ArrayList<String> cars = new ArrayList<String>();
-			cars.add("Szampan");
-			cars.add("Kokos");
-			cars.add("Medyk");
-			cars.add("Lipiec");
+			ArrayList<String> yachts = new ArrayList<String>();
+			ArrayList<String> yachts1 = new ArrayList<String>();
+			yachts1.add("Szampan");
+			yachts1.add("Kokos");
+			yachts1.add("Medyk");
+			yachts1.add("Lipiec");
 
 			int ilwyj1;
 
@@ -41,17 +42,18 @@ public class Terminarz extends Program {
 				Array plr = new Array();
 				plr.setName(name);
 				ilwyj2.add(plr);
+				yachts.add(name);
 			}
              //more work//
-			if (ilwyj2.equals(cars)) {
+			 if(!yachts.equals(yachts1)) {
+				 yachts1.remove(name);
+				 
+			 }
 				
-				cars.remove("Szampan");
-			
-			}
-				System.out.println("Pozosta³e klasy" + cars);
-			
+			System.out.println(yachts1);
 
 		}
 
 	}
 }
+

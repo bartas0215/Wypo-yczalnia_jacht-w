@@ -14,7 +14,7 @@ public class Program {
 
 			String line = in.nextLine();
 			System.out.println(line);
-
+            
 		}
 
 	}
@@ -69,6 +69,7 @@ public class Program {
 		default:
 			System.out.println("Start again");
 		}
+		
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -102,7 +103,7 @@ public class Program {
 				case "account balance":
 					Stan_konta konto = new Stan_konta();
 					System.out.println("Aktualny stan konta" + " " + konto.getBalance());
-					// weekend//
+					
 				case "Change account settings":
 				case "change account settings":
 
@@ -136,6 +137,6 @@ public class Program {
 		}
 
 		System.out.println("Thank you for using MEWA yacht rental system");
-
+      
 	}
 }
