@@ -35,6 +35,7 @@ public class Array extends Program {
 				
 			}
 			System.out.println("Participants name: " + name);
+		input.close();
 		}
 	}
 }

@@ -1,10 +1,53 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+
+
 public class NewAcc extends Program {
 
-	void la() {
+	private String mail;
+
+	public String getMail() {
+		return mail;
+	}
+
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+
+	public String getLog() {
+		return log;
+	}
+
+	public void setLog(String log) {
+		this.log = log;
+	}
+
+	public String getPass3() {
+		return pass3;
+	}
+
+	public void setPass3(String pass3) {
+		this.pass3 = pass3;
+	}
+
+	public String getPass4() {
+		return pass4;
+	}
+
+	public void setPass4(String pass4) {
+		this.pass4 = pass4;
+	}
+
+	private String log;
+	private String pass3;
+	private String pass4;
+
+	public void la() {
 
 		HashMap<String, Integer> pass = new HashMap<String, Integer>();
 		ArrayList<String> email = new ArrayList<String>();
@@ -43,7 +86,23 @@ public class NewAcc extends Program {
 		pass.put(pass3, 1);
 		pass.put(pass4, 1);
 
+		 //connection to database
+		   try {
+			Connection myConn = DriverManager.getConnection("jdbc:mysql://192.168.1.2/Konta", "bartas", "bartas");
 		
-	}
+		  
+		   
+		   //create statement 
+			Statement myStmt=myConn.createStatement();
+		   
+		   String sql = "insert into Accounts" + " (mail, login, password)  values ('"+mail+"','"+ log+"', '"+pass3+"') ";
+		  
+		   myStmt.executeUpdate(sql);
 
+	}
+		   catch (Exception exc) {
+			   exc.printStackTrace();
+			  }
+	
+}
 }

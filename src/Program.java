@@ -14,7 +14,7 @@ public class Program {
 
 			String line = in.nextLine();
 			System.out.println(line);
-            
+
 		}
 
 	}
@@ -23,6 +23,7 @@ public class Program {
 		Scanner wlas1 = new Scanner(System.in);
 
 		System.out.println("Select the boat class: Szampan, Kokos, Medyk, Lipiec");
+
 		String jacht1 = wlas1.nextLine();
 		switch (jacht1) {
 
@@ -63,13 +64,13 @@ public class Program {
 			Array lipiec1 = new Array();
 			lipiec1.mi();
 			Program lipiec2 = new Program();
-		    lipiec2.file();
+			lipiec2.file();
 			break;
 
 		default:
 			System.out.println("Start again");
 		}
-		
+
 	}
 
 	public static void main(String[] args) throws FileNotFoundException {
@@ -103,7 +104,7 @@ public class Program {
 				case "account balance":
 					Stan_konta konto = new Stan_konta();
 					System.out.println("Aktualny stan konta" + " " + konto.getBalance());
-					
+
 				case "Change account settings":
 				case "change account settings":
 
@@ -118,6 +119,8 @@ public class Program {
 
 			case "Sign in":
 			case "sign in":
+				SignIn sign =new SignIn();
+				sign.read();
 				Program ro1 = new Program();
 				ro1.set();
 
@@ -137,6 +140,6 @@ public class Program {
 		}
 
 		System.out.println("Thank you for using MEWA yacht rental system");
-      
+
 	}
 }
