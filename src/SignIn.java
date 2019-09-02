@@ -28,16 +28,16 @@ public class SignIn extends Program{
 		   
 			ResultSet myRs = myStmt.executeQuery ("select login and password from Accounts where login='"+log+"' and password = '"+pass3+"' ");
 			
-			while(myRs.next()) {
+			if(myRs.next()) {
 				
 				System.out.println("You have singed up to your account");
-				break;
+				//break;
 			}
-			//more work//
-			while(!myRs.next()) {
+			
+			else if (!myRs.next()) {
 				System.out.println("Wrong data. Try again");
 				System.exit(0);
-				break;
+				//break;
 				
 			}
 		
