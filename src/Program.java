@@ -73,7 +73,7 @@ public class Program {
 
 	}
 
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws Exception  {
 
 		System.out.println("Welcome in MEWA yachting rental reservation system");
 
@@ -138,8 +138,13 @@ public class Program {
 			}
 
 		}
-
-		System.out.println("Thank you for using MEWA yacht rental system");
-
+		
+		System.out.println("Thank you for using MEWA yacht rental system\nThe above information was sent to your email");
+		Gmail.sendMail("yachtrentaltest@gmail.com");
+	
 	}
+	
+
 }
+
+

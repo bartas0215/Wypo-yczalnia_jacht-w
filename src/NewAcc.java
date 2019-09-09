@@ -3,7 +3,18 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Properties;
 import java.util.Scanner;
+
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.AddressException;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 
 
 
@@ -47,7 +58,7 @@ public class NewAcc extends Program {
 	private String pass3;
 	private String pass4;
 
-	public void la() {
+	public void la()  {
 
 		HashMap<String, Integer> pass = new HashMap<String, Integer>();
 		ArrayList<String> email = new ArrayList<String>();
@@ -104,5 +115,13 @@ public class NewAcc extends Program {
 			   exc.printStackTrace();
 			  }
 	
+		  
+		   
 }
+	
+	
+
 }
+	
+	
+
