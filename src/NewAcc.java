@@ -1,5 +1,6 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -58,7 +59,7 @@ public class NewAcc extends Program {
 	private String pass3;
 	private String pass4;
 
-	public void la()  {
+	public void la() throws Exception  {
 
 		HashMap<String, Integer> pass = new HashMap<String, Integer>();
 		ArrayList<String> email = new ArrayList<String>();
@@ -109,13 +110,18 @@ public class NewAcc extends Program {
 		   String sql = "insert into Accounts" + " (mail, login, password)  values ('"+mail+"','"+ log+"', '"+pass3+"') ";
 		  
 		   myStmt.executeUpdate(sql);
-
+		   
+		   
+		   Statement myStmt1=myConn.createStatement();
+		   
+		   
+			
 	}
 		   catch (Exception exc) {
 			   exc.printStackTrace();
 			  }
 	
-		  
+		    
 		   
 }
 	

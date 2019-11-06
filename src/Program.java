@@ -2,7 +2,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.SwingUtilities;
+
 public class Program {
+	
+	
 
 	public void file() throws FileNotFoundException {
 
@@ -30,7 +36,7 @@ public class Program {
 		case "Szampan":
 		case "szampan":
 			Klient ole = new Klient();
-			ole.yacht();
+			ole.yacht(600, 800);
 			Array ole1 = new Array();
 			ole1.mi();
 			Program ole2 = new Program();
@@ -39,8 +45,8 @@ public class Program {
 		case "Kokos":
 		case "kokos":
 
-			Kokos flo = new Kokos();
-			flo.yacht();
+			Klient flo = new Klient();
+			flo.yacht(800,1000);
 			Array flo1 = new Array();
 			flo1.mi();
 			Program flo2 = new Program();
@@ -49,8 +55,8 @@ public class Program {
 
 		case "Medyk":
 		case "medyk":
-			Medyk bla = new Medyk();
-			bla.yacht();
+			Klient bla = new Klient();
+			bla.yacht(1000,1200);
 			Array bla1 = new Array();
 			bla1.mi();
 			Program bla2 = new Program();
@@ -59,8 +65,8 @@ public class Program {
 
 		case "Lipiec":
 		case "lipiec":
-			Lipiec lipiec = new Lipiec();
-			lipiec.yacht();
+			Klient lipiec = new Klient();
+			lipiec.yacht(400,600);
 			Array lipiec1 = new Array();
 			lipiec1.mi();
 			Program lipiec2 = new Program();
@@ -73,13 +79,18 @@ public class Program {
 
 	}
 
+
+
 	public static void main(String[] args) throws Exception  {
+		
 
 		System.out.println("Welcome in MEWA yachting rental reservation system");
 
 		Scanner wlas = new Scanner(System.in);
 
 		System.out.println("Choose option: User lub Client");
+		
+		
 		String login1, has³o1;
 
 		String nazwa = wlas.nextLine();
@@ -139,12 +150,15 @@ public class Program {
 
 		}
 		
+		
+		
 		System.out.println("Thank you for using MEWA yacht rental system\nThe above information was sent to your email");
 		Gmail.sendMail("yachtrentaltest@gmail.com");
-	
+	    
 	}
+}
 	
 
-}
 
 
+	

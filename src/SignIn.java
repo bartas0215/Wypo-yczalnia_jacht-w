@@ -31,13 +31,13 @@ public class SignIn extends Program{
 			if(myRs.next()) {
 				
 				System.out.println("You have singed up to your account");
-				//break;
+				
 			}
 			
 			else if (!myRs.next()) {
 				System.out.println("Wrong data. Try again");
 				System.exit(0);
-				//break;
+				
 				
 			}
 		

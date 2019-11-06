@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Klient extends Program {
 	// Cena za jeden dzieñ//
 
-	public static final int PI1 = 600;
-	public static final int MI1 = 800;
+	 int PI1 = 600;
+	 int MI1 = 800;
 
-	void yacht() {
+	 public static void yacht(int PI1,int MI1) {
 		System.out.println("What's your prefence in hull lenght ?: 8 meters or 10 meters (Write number only)");
 		Scanner szampan1 = new Scanner(System.in);
 		{

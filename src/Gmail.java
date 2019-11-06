@@ -1,3 +1,8 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -22,7 +27,7 @@ public class Gmail {
 		properties.put("mail.smtp.port", "587");
 
 		String myAccountEmail = "yachtrentaltest@gmail.com";
-		String password = "123malina321";
+		String password = "kukle1995!";
 
 		Session session = Session.getInstance(properties, new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
@@ -43,9 +48,15 @@ public class Gmail {
 		try {
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(myAccountEmail));
-			message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
+			message.setRecipient(Message.RecipientType.TO, new InternetAddress());
 			message.setSubject("First mail from java");
-			message.setText("This is Mewa company");
+			message.setText("Thank you for your reservation in MEWA Yacht Renting Program.\r\n" + 
+					"Here is few details about us:\r\n" + 
+					"+ We are located in Gi¿ycko in EkoMarina, just a few meters from railway station\r\n" + 
+					"+ Your reservation starts at 12 p.m.\r\n" + 
+					"+ You are obliged to return the boat before 11 a.m\r\n" + 
+					"+ You have to make the deposit up to 1500 z³. It will be returned after you finish your renting\r\n" + 
+					"+ If any doubts please contact us: mewarenting@gmaix.pl, mobile:333 333 333 ");
 			return message;
 		} catch (AddressException e) {
 
@@ -56,7 +67,22 @@ public class Gmail {
 		}
 
 		return null;
-
 	}
+
+public void read1() throws Exception {
+	Connection myConn = DriverManager.getConnection("jdbc:mysql://192.168.1.2/Konta", "bartas", "bartas");
+	
+	  
+	   
+	   //create statement 
+		Statement myStmt=myConn.createStatement();
+	   
+	   
+		ResultSet myRs = myStmt.executeQuery ("select mail from Accounts");
+		//Gmail.sendMail(myRs); 
+
+
+}
+
 }
 
